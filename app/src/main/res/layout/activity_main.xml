@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="#FFFFFF"
+    android:layoutDirection="ltr"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="467dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="436dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/studentpage"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#03A9F4"
+            android:fontFamily="sans-serif-black"
+            android:text="ממשק חניך"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_column="0"
+            app:layout_columnWeight="0.1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/instractorpage"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#0F5677"
+            android:fontFamily="sans-serif-black"
+            android:text="ממשק מדריך"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

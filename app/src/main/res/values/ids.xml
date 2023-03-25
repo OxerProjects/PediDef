@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="listen" type="id" />
+    <item name="send" type="id" />
+    <item name="listDevices" type="id" />
+    <item name="msg_box" type="id" />
+    <item name="status" type="id" />
+    <item name="writeMsg" type="id" />
+</resources>
